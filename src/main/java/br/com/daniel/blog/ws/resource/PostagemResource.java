@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.daniel.blog.ws.entity.Postagem;
-import br.com.daniel.blog.ws.service.impl.PostagemServiceImpl;
+import br.com.daniel.blog.ws.service.PostagemService;
 
 @RestController
 @RequestMapping("postagens")
 public class PostagemResource {
 	
 	@Autowired
-	private PostagemServiceImpl postagemService;
+	private PostagemService postagemService;
 
 	@RequestMapping( method= RequestMethod.POST )
 	public void save(Postagem postagem) {
