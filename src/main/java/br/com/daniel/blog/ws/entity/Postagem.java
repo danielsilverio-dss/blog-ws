@@ -1,9 +1,28 @@
 package br.com.daniel.blog.ws.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TB_POSTAGEM")
 public class Postagem {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="ID_POSTAGEM")
+	public int id;
+	
+	@Column(name="DS_TITULO")
 	public String titulo;
+	
+	@Column(name="DS_TEXTO")
 	public String texto;
+	
+	@Column(name="DS_TAGS")
 	public String tags;
 	
 	public Postagem() {}
