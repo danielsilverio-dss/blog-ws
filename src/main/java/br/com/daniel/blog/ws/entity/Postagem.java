@@ -14,7 +14,7 @@ public class Postagem {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="ID_POSTAGEM")
-	public int id;
+	public long id;
 	
 	@Column(name="DS_TITULO")
 	public String titulo;
