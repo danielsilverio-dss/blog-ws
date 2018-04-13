@@ -8,11 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TB_POSTAGEM")
+@Table(schema="BLOG_DB", name="TB_POSTAGEM")
 public class Postagem {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="ID_POSTAGEM")
 	public long id;
 	
