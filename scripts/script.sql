@@ -1,0 +1,1 @@
+create table tb_postagem( id_postagem INTEGER AUTO_INCREMENT PRIMARY KEY, ds_titulo VARCHAR(200), ds_texto VARCHAR(2000), ds_tags VARCHAR(300) );
